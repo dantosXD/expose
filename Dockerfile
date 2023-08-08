@@ -14,8 +14,8 @@ WORKDIR /src
 # install the dependencies
 RUN composer install -o --prefer-dist && chmod a+x expose
 
-ENV port=8080
-ENV domain=localhost
+ENV port=8081
+ENV domain=expose.dansantos.pro
 ENV username=username
 ENV password=password
 ENV exposeConfigPath=/src/config/expose.php
